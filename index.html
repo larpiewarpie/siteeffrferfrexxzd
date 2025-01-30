@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisho.ps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(35px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+    body {
+        background-color: black;
+        font-family: 'Marcellus', sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        margin-top: 10px;
+        color: darkred;
+        font-size: 200px;
+        font-weight: 200;
+        font-family: 'Crusades', sans-serif;
+        -webkit-animation: flicker 3s infinite;
+        z-index: -1;
+    }
+    .textbox {
+        width: 700px;
+        color: #FFFFFFB3;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        margin: 20px 0 20px;
+    }
+    .links {
+        color: #FFFFFFB3;
+        text-align: center;
+        width: 700px;
+        margin: 10px 0 10px;
+    }
+    .links a {
+        text-decoration: none;
+        color: #FFFFFFB3;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .links a:hover {
+        color: white;
+    }
+    .members {
+        width: 700px;
+        text-align: center;
+        color: #FFFFFFB3;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        margin: 20px 0 20px;
+    }
+    .members a {
+        text-decoration: none;
+        color: #FFFFFFB3;
+    }
+    .members a:hover {
+        color: white;
+    }
+    .divider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .divider-hr-left {
+        width: 60px;
+        border-style: solid;
+        border-color: darkred;
+        border-width: 2.5px;
+    }
+    .divider-hr-right {
+        width: 600px;
+        border-style: solid;
+        border-color: darkred;
+        border-width: 2.5px;
+    }
+    .divider-title {
+        color: #FF9999;
+        margin: 0 10px 0;
+        font-size: 26px;
+    }
+    #cross {
+        font-family: 'Crusades', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FF9999;
+    }
+    @font-face {
+        font-family: 'Crusades';
+        src: url('Crusades.ttf') format('truetype');
+    }
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        h1 {
+            font-size: 125px;
+        }
+
+        .textbox {
+            font-size: 14px;
+            width: 300px;
+        }
+        .links a {
+            font-size: 18px;
+        }
+        .members {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .divider-hr-left {
+            width: 20px;
+            border-width: 2.5px;
+        }
+        .divider-hr-right {
+            width: 200px;
+            border-width: 2.5px;
+        }
+        .divider-title {
+            font-size: 20px;
+        }
+    }
+    @-webkit-keyframes flicker
+    {
+        0% {opacity:0;}
+        9% {opacity:0;}
+        10% {opacity:.5;}
+        13% {opacity:0;}
+        20% {opacity:.5;}
+        25% {opacity:1;}
+    }
+</style>
+</head>
+<body>
+<div id="overlay">
+    <div class="content">
+        <p>Click.</p>
+    </div>
+</div>
+<audio id="audio" src="14.mp3" autoplay></audio>
+<div class="container">
+    <h1>807.LOL</h1>
+    <div class="divider">
+        <span style="font-family: 'Crusades', sans-serif; color: darkred; font-size: 40px; font-weight: 600;">+</span>
+        <hr class="divider-hr-left">
+        <h2 class="divider-title">807.lol</h2>
+        <hr class="divider-hr-right">
+        <span style="font-family: 'Crusades', sans-serif; color: darkred; font-size: 40px; font-weight: 600;">+</span>
+    </div>
+    <div class="textbox">
+        <p><span id="cross">+</span>&nbsp;&nbsp;In the digital echoes of 807.lol, a space where creativity and chaos intertwined, stories were shared, laughter spilled, and friendships bloomed in pixels. A quiet haven of wit, where the ordinary became extraordinary. And now, as we close the chapter, we bid farewell to the platform that brought us together, leaving behind a trail of memories and moments that will endure in the hearts of those who knew it. Farewell, 807.lol – your legacy will live on in every line of code, every conversation, and every click. Godspeed.</p>
+    </div>
+    <div class="divider">
+        <span style="font-family: 'Crusades', sans-serif; color: darkred; font-size: 40px; font-weight: 600;">+</span>
+        <hr class="divider-hr-left">
+        <h2 class="divider-title">roster</h2>
+        <hr class="divider-hr-right">
+        <span style="font-family: 'Crusades', sans-serif; color: darkred; font-size: 40px; font-weight: 600;">+</span>
+    </div>
+    <div class="members">
+        <p><a href="https://t.me/eljefe527" target="_blank">eljefe</a> &nbsp;<span id="cross">+</span>&nbsp; Founder<br></p>
+        <p><a href="https://t.me/stxxz123" target="_blank">stxxz</a> &nbsp;<span id="cross">+</span>&nbsp; OSINT / CSINT<br></p>
+        <p><a href="https://t.me/ferste123" target="_blank">ferste</a> &nbsp;<span id="cross">+</span>&nbsp; OSINT / CSINT<br></p>
+        <p><a href="https://t.me/Dropyouralias" target="_blank">c0mfeds</a> &nbsp;<span id="cross">+</span>&nbsp; OSINT / CSINT<br></p>
+        <p><a href="https://t.me/ferste123" target="_blank">uzi</a> &nbsp;<span id="cross">+</span>&nbsp; Clique<br></p>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var overlay = document.getElementById('overlay');
+    var audio = document.getElementById('audio');
+
+    overlay.addEventListener('click', function() {
+        overlay.style.animation = 'fadeOut 1s forwards';
+        setTimeout(function() {
+        overlay.style.display = 'none';
+        }, 500);
+        audio.play();
+    });
+    });
+  </script>
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+</body>
+</html>
